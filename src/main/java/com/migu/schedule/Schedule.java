@@ -191,8 +191,12 @@ public class Schedule
      */
     public int scheduleTask(int threshold)
     {
+        if(threshold <0){
+            return ReturnCodeKeys.E002;
+        }
         
-        return ReturnCodeKeys.E000;
+        
+        return ReturnCodeKeys.E014;
     }
     
     /**
